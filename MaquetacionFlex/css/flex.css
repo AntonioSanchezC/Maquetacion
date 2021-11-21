@@ -1,0 +1,166 @@
+
+/* El contenedor principal es flex y es donde trabajamos lo demas*/
+
+#contenedor{
+display:flex; 
+flex-direction: column;
+font-family: georgia;
+background-color: #DADCE5;
+     } 
+
+
+/* Creamos al menos 2 div que dividen la pagina en el principio y el resto, 
+uno con una disposcion flex-direction: row;(el primero) y el segundo 
+con una disposcion flex-direction: row */
+
+/* El div inicial, es el flex-direction: row vinen definido por el id #primero
+y la clase del logo que alberga*/
+     .logo{
+        width: 12%; 
+        margin: 2%;
+        justify-content:space-around;
+       
+     }
+
+     a{
+
+        border:  solid #DCDCDC;
+        padding: 0.5%; 
+
+    }
+
+
+
+
+    #primero{ 
+    display:flex; 
+    flex-wrap:wrap;
+    background: #6263E8; 
+
+    
+    
+    
+    }
+/* DADCE5 Las tres opciones iniciales de acceso dentro del primer div*/
+
+
+   #option1{
+    display:flex; 
+    Align-items:flex-end;
+    align-self: flex-end;
+    flex-grow : 1;
+    margin-left: -12%;
+    
+   } 
+   #tituloPagina{
+    display:flex; 
+    align-self:flex-start;
+    margin-top: 3%;
+    margin-left: -53%;
+   } 
+
+
+/* Es el segundo div dentro del contenedor, es el primero que tiene 
+flex-direction: column */
+#segundo{
+    display:flex; 
+    Align-items:center;
+    flex-wrap:wrap;
+
+}
+#segundo.medio{
+    Justify-content:center; 
+}
+li{
+    list-style-type:none;
+    padding-bottom: 5%;
+}
+#menu{
+        display: flex;
+        flex-direction: column;
+        padding-left: -3%;
+        justify-content:space-around ;
+        padding: 2%;
+        flex-wrap:wrap;
+        background-color: #FFFFFF;
+        margin-top: -81%;
+    }
+    
+/* Es el tercer div dentro del contenedor, es el segundo que tiene 
+flex-direction: column */
+
+#medio{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    padding-left: 1,5%; ;
+    Align-items:center;
+    flex-wrap:wrap;
+    flex-grow : 2;
+    
+}
+/* Pizarra donde colgar noticias */
+#marcoPizarra{
+    display: flex;
+    margin-top: 5%;
+    width: 60%; 
+    height:  80%;
+    padding: 2%; 
+    border: solid #555;
+    justify-content:center;
+    Align-items:center;
+    background-color: white;
+
+}
+#interiorPizarra{
+    display: flex;
+    justify-content:space-around;
+    width: 80%; 
+    height:  80%;
+    padding: 10%; 
+    background-color: #808080;
+    border: 3px solid #555;
+    
+}
+/* Noticias */
+
+#noticiasPizarra{
+
+    background-color: white;
+    border: 3px solid #555;
+    margin: 15%;
+    padding: 5%;
+}
+
+#noticiasPizarraReciente{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    justify-content:space-between;
+    width: 60%; 
+    height: 36%;
+ 
+
+    
+}
+
+#noticiasPizarraBuscadas{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    justify-content:space-between;
+    width: 60%; 
+    height: 36%;
+    
+    
+}
+
+/* Calendario */
+
+#calendario{
+   
+    margin-top: 6%; 
+    margin-bottom: 6%; 
+    justify-content:center;
+    
+}
