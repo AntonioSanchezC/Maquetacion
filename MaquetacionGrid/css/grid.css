@@ -1,0 +1,162 @@
+
+/* El contenedor principal es flex y es donde trabajamos lo demas*/
+
+#contenedor{
+display:grid; 
+grid-template-columns: 20% auto auto 25%;
+grid-template-rows:  15% 50% 15% 15%;
+font-family: georgia;
+background-color: #DADCE5;
+     } 
+
+
+/* Creamos al menos 2 div que dividen la pagina en el principio y el resto, 
+uno con una disposcion flex-direction: row;(el primero) y el segundo 
+con una disposcion flex-direction: row */
+
+/* El div inicial, es el flex-direction: row vinen definido por el id #primero
+y la clase del logo que alberga*/
+     .logo{
+        width: 12%; 
+        margin: 2%;
+        justify-content:space-around;
+       
+     }
+
+     a{
+
+        border:  solid #DCDCDC;
+        padding: 0.5%; 
+
+    }
+
+
+
+
+    #primero{ 
+        background: #6263E8; 
+        grid-column: 1/5;
+        grid-row:1/2;
+        display: flex;
+        align-items: center;
+        padding: 2em;
+        justify-content: space-between;
+
+    }
+
+    
+   
+    nav{
+        grid-column: 1/2;
+        grid-row:2/5;
+        padding: 2%;
+        background-color: #FFFFFF;
+        padding: 1em;
+    }
+    nav div{
+        margin-bottom: 20px;
+    }
+/* DADCE5 Las tres opciones iniciales de acceso dentro del primer div*/
+
+
+   #option1{
+    align-self: flex-end;
+    flex-grow : 1;
+    margin-left: -12%;
+    
+   } 
+   #tituloPagina{
+    align-self:flex-start;
+    margin-top: 3%;
+    margin-left: -53%;
+   } 
+
+
+/* Es el segundo div dentro del contenedor, es el primero que tiene 
+flex-direction: column */
+#segundo{
+    display:flex; 
+    Align-items:center;
+    flex-wrap:wrap;
+
+}
+    
+/* Es el tercer div dentro del contenedor, es el segundo que tiene 
+flex-direction: column */
+
+#medio{
+    grid-column: 2/5;
+    grid-row: 2/3;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    padding-left: 1em; 
+    Align-items:center;
+    flex-wrap:wrap;
+    flex-grow : 2;
+    
+}
+
+/* Pizarra donde colgar noticias */
+#marcoPizarra{
+    margin: 5%;
+    width: 60%; 
+    height:  70%;
+    padding: 2%; 
+    border: solid #555;
+    justify-content:center;
+    Align-items:center;
+    background-color: white;
+
+}
+#interiorPizarra{
+    display: flex;
+    justify-content:space-around;
+    width: 80%; 
+    height:  70%;
+    padding: 10%; 
+    background-color: #808080;
+    border: 3px solid #555;
+    
+}
+/* Noticias */
+
+#noticiasPizarra{
+
+    background-color: white;
+    border: 3px solid #555;
+    margin: 15%;
+    padding: 5%;
+}
+
+#noticiasPizarraReciente{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    justify-content:space-between;
+    width: 60%; 
+    height: 36%;
+ 
+
+    
+}
+
+#noticiasPizarraBuscadas{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    justify-content:space-between;
+    width: 60%; 
+    height: 36%;
+    
+    
+}
+
+
+#calendario{
+    grid-column: 4/5;
+    grid-row: 1/5;
+    display: flex;
+    flex-wrap: ;
+}
