@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/estilo.css" rel="stylesheet" type="text/css">
+    <title>Ejercicio Formulario Top</title>
+</head>
+<body>
+
+   
+<div class="container">
+    <header>
+        <h1>Formulario de inscripción</h1> 
+    </header>
+
+    
+    <div class="Dpersonales">
+        <h2>Datos personales</h2>
+        <form onsubmit="rellenado()"> 
+
+           
+           <!-- Nombre-->
+           <label>Nombre:<input id="nombre" type="text" name="nombre" value ="Nombre" onFocus="this.value=''"/></label>
+
+           <label>Apellidos:
+            <input id="ape1" type="text" name="ape1" value ="1ºApellido" onFocus="this.value=''"/>
+            <input id="ape2" type="text" name="ape1" value ="2ºApellido" onFocus="this.value=''"/>
+            </label> 
+           <br>
+
+            <!--DNI-->
+            <label>DNI:<input id="dni" type="text"  value ="234567345O" onFocus="this.value=''"/></label> 
+            
+            
+            <!--Fecha-->
+            <label>Fecha de login: <input type="date" id="fechaActual" value="" ></label> 
+           
+            <br>
+        </form> 
+    </div>        
+
+    <div class="contactos">
+
+        <h2>Contactos</h2>
+    <form >
+           <!--E-mail-->
+           <label>e-mail:<input id="mail" type="text" name="mail" value ="example@dmail.com" onFocus="this.value=''"/></label> 
+           <br>
+
+        
+            <!--Telefono-->
+            <label>Telefono de contacto:<input id="teleph" type="text"  value="999999999" onFocus="this.value=''"/></label> 
+            <br>
+         
+            <!--Telefono movil-->
+            <label>Telefono móvil:<input id="movil" type="text" value="9999999" onFocus="this.value=''"/></label> 
+            <br>
+           
+                     
+           <!--Contraseña-->
+           <label>Contraseña:<input id="pass" type="text" name="pass" value="*******" onFocus="this.value=''"/></label> 
+           <label>Repite Contraseña:<input id="pass1" type="text" name="pass1" value="*******" onFocus="this.value=''"/></label> 
+           <br>
+        </form> 
+    </div>
+
+        
+       
+    <div class="fincasilla">
+
+        <h2>Envio de datos</h2>
+        <form> 
+           <!-- Casilla vacia-->
+           <label>Acepte los términos:<input id="casilla" type="checkbox"/> </label>
+           <br>
+           <!-- Boton de enviado-->
+           <input  id ="botonEnvio1" type="submit" value="Registrarse" disabled>
+
+         </form> 
+    </div> 
+
+</div>
+         <script src="formulario.js">  </script>
+</body>
+</html>

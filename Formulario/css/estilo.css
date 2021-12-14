@@ -1,0 +1,47 @@
+body{
+    background-color: #6263E8; 
+}
+
+.container{
+    color:#666666;
+    background-color: white;
+    font-family: "Lobster", cursive;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows:  15% 23% 33% auto;
+    border-radius: 1em;
+   width:90%;
+    margin: 50px auto;
+}
+
+
+header{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    text-align: center;
+  
+
+}
+
+.Dpersonales{
+
+    grid-column: 2/4;
+    grid-row: 2/3;
+
+
+}
+
+.contactos{
+
+    grid-column: 2/4;
+    grid-row: 3/4;
+   
+    
+}
+
+.fincasilla{
+    grid-column: 2/4;
+    grid-row: 4/5;
+
+    width: 120%;
+}
