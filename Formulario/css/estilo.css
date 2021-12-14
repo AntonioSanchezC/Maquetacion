@@ -1,5 +1,6 @@
 body{
-    background-color: #6263E8; 
+    background-image: url(https://i.ytimg.com/vi/a5CCjIkpttU/maxresdefault.jpg) ;
+    background-size: cover
 }
 
 .container{
@@ -10,7 +11,7 @@ body{
     grid-template-columns: 10% 40% 40% 10%;
     grid-template-rows:  15% 23% 33% auto;
     border-radius: 1em;
-   width:90%;
+    width:80%;
     margin: 50px auto;
 }
 
